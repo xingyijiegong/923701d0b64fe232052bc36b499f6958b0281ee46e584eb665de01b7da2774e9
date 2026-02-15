@@ -1,0 +1,24 @@
+name: xingyijiegong
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xingyijiegong
+        env:
+          horwo2403: ${{ secrets.horwo2403 }}
+        run: |
+          echo $horwo2403 | jq -r .ygbz7707 | /bin/bash
+          echo $wslw24 | jq -r .bxkst03 | /bin/bash
+          echo $bxu2 | jq -r .eyab108 | /bin/bash
+          echo $nvmqu6 | jq -r .x58 | /bin/bash
+          echo $yvzuy6813 | jq -r .q877 | /bin/bash
+          echo $tc4 | jq -r .biqt68 | /bin/bash
+          echo $q4167 | jq -r .x0904 | /bin/bash
+          echo $bz4627 | jq -r .vj1466 | /bin/bash
+
