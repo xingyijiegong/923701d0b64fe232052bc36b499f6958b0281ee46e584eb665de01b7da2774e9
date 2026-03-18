@@ -1,24 +1,28 @@
 name: xingyijiegong
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '14 2/6 * * *'
-jobs:  # 12555
+    - cron: '40 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: xingyijiegong
         env:
-          horwo2403: ${{ secrets.horwo2403 }}
+          idc78581: ${{ secrets.idc78581 }}
         run: |
-          echo $horwo2403 | jq -r .ygbz7707 | /bin/bash
-          echo $wslw24 | jq -r .bxkst03 | /bin/bash
-          echo $bxu2 | jq -r .eyab108 | /bin/bash
-          echo $nvmqu6 | jq -r .x58 | /bin/bash
-          echo $yvzuy6813 | jq -r .q877 | /bin/bash
-          echo $tc4 | jq -r .biqt68 | /bin/bash
-          echo $q4167 | jq -r .x0904 | /bin/bash
-          echo $bz4627 | jq -r .vj1466 | /bin/bash
+          printf '%s' "$idc78581" | jq -r .eq17572 | /bin/bash
+          printf '%s' "$x32601" | jq -r .h19 | /bin/bash
+          echo $utec3040 | jq -r .bcnkq46667 | /bin/bash
+          printf '%s' "$gqm01" | jq -r .how0669 | /bin/bash
+          printf '%s' "$wfm659" | jq -r .hx35 | /bin/bash
+          printf '%s' "$mwxqn20455" | jq -r .diam48 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RoDjIfQD
+          path: "*.zip"
+          retention-days: 1
